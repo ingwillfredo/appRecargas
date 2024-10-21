@@ -1,0 +1,14 @@
+h1 {
+    color:white;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+    background-color: azure;
+    border-radius: 8px;
+}
+

@@ -1,0 +1,31 @@
+<div class="container">
+    <h4>Venta Recarga</h4>
+
+    <div>
+        <form [formGroup]="formRecarga" (ngSubmit)="submit()" class="form-group">
+            <div class="form-group">
+                <label for="id_Operador">Operador</label>
+                <select class="input" formControlName="id_Operador" id="id_Operador">
+                    <option *ngFor="let item of listOperadores" [value]="item.id_Operador">{{item.nombre_Operador}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input class="form-group input" formControlName="numero_Celular" type="text" name="numero_Celular" id="numero_Celular" placeholder="Celular">
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor</label>
+                <input class="form-group input" formControlName="valor" type="number" name="valor" id="valor" placeholder="Valor Recarga">
+            </div>
+            <div class="form-group">
+                <label for="id_Vendedor">Vendedor</label>
+                <select class="input" formControlName="id_Vendedor" id="id_Vendedor">
+                    <option *ngFor="let item of listVendedores" [value]="item.id_Vendedor">{{item.nombre_Vendedor}}</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">RECARGAR</button>
+        </form>
+
+    </div>
+    
+</div>

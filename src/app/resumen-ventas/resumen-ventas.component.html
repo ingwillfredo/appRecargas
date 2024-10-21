@@ -1,0 +1,33 @@
+<div class="container">
+    <h4>Lista recargas</h4>
+    <div class="card" *ngFor="let item of ListObj">
+        <div class="row col-lg-12">
+            <div class="col-lg-3">
+                Operador
+            </div>
+            <div class="col-lg-2">
+                Cantidad
+            </div>
+            <div class="col-lg-3">
+                Valor Recargas
+            </div>
+            <div class="col-lg-3">
+                Vendedor
+            </div>
+        </div>
+        <div class="row col-lg-12">
+            <div class="col-lg-3">
+                <h6>{{item.operador}}</h6>
+            </div>
+            <div class="col-lg-2">
+                {{ item.cantidad }}
+            </div>
+            <div class="col-lg-3">
+                {{ item.valorTotal }}
+            </div>
+            <div class="col-lg-3">
+                {{ item.vendedor }}
+            </div>
+        </div>
+    </div>
+</div>

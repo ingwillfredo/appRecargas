@@ -1,0 +1,8 @@
+.container {
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.card .row {
+    justify-content:space-around ;
+}
