@@ -10,25 +10,25 @@ export class ServicioService {
 
   constructor(private http: HttpClient) { }
 
-  urlGetInfo = 'https://localhost:7149/api/Ventatotal/GetVentaTotal/';
+  urlGetInfo = 'http://apirecargas.somee.com/api/Ventatotal/GetVentaTotal/';
 
   public getInfo(): Observable<Resumen[]> {
     return this.http.get<Resumen[]>(this.urlGetInfo)
   }
 
-  urlGetOperadores = 'https://localhost:7149/api/Ventatotal/GetOperadores';
+  urlGetOperadores = 'http://apirecargas.somee.com/api/Ventatotal/GetOperadores';
 
   public GetOperadores(): Observable<any> {
     return this.http.get<any>(this.urlGetOperadores)
   }
 
-  urlGetVendedores = 'https://localhost:7149/api/Ventatotal/GetVendedores';
+  urlGetVendedores = 'http://apirecargas.somee.com/api/Ventatotal/GetVendedores';
 
   public GetVendedores(): Observable<any> {
     return this.http.get<any>(this.urlGetVendedores)
   }
 
-  private urlGuardaRecarga = 'https://localhost:7149/api/Ventatotal/AgregaRecarga';
+  private urlGuardaRecarga = 'http://apirecargas.somee.com/api/Ventatotal/AgregaRecarga';
 
   public AddRecarga(recarga: any): Observable<any> {
     console.log(recarga);

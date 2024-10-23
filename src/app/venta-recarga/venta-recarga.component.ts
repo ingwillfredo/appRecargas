@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ServicioService } from '../servicio.service';
 import { Router } from '@angular/router';
+import { InfoRecargaComponent } from '../info-recarga/info-recarga.component';
+import { ResumenVentasComponent } from '../resumen-ventas/resumen-ventas.component';
 
 
 @Component({
@@ -36,6 +38,8 @@ export class VentaRecargaComponent implements OnInit {
   resetForm() {
     this.formRecarga.reset();
   }
+
+
 
   mensaje: string;
 
