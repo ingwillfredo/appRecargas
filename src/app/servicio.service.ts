@@ -10,19 +10,19 @@ export class ServicioService {
 
   constructor(private http: HttpClient) { }
 
-  urlGetInfo = 'http://apirecargas.somee.com/api/Ventatotal/GetVentaTotal/';
+  urlGetInfo = 'https://apirecargas.somee.com/api/Ventatotal/GetVentaTotal/';
 
   public getInfo(): Observable<Resumen[]> {
     return this.http.get<Resumen[]>(this.urlGetInfo)
   }
 
-  urlGetOperadores = 'http://apirecargas.somee.com/api/Ventatotal/GetOperadores';
+  urlGetOperadores = 'https://apirecargas.somee.com/api/Ventatotal/GetOperadores';
 
   public GetOperadores(): Observable<any> {
     return this.http.get<any>(this.urlGetOperadores)
   }
 
-  urlGetVendedores = 'http://apirecargas.somee.com/api/Ventatotal/GetVendedores';
+  urlGetVendedores = 'https://apirecargas.somee.com/api/Ventatotal/GetVendedores';
 
   public GetVendedores(): Observable<any> {
     return this.http.get<any>(this.urlGetVendedores)
