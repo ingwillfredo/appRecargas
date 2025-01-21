@@ -28,7 +28,7 @@ export class ServicioService {
     return this.http.get<any>(this.urlGetVendedores)
   }
 
-  private urlGuardaRecarga = 'http://apirecargas.somee.com/api/Ventatotal/AgregaRecarga';
+  private urlGuardaRecarga = 'https://apirecargas.somee.com/api/Ventatotal/AgregaRecarga';
 
   public AddRecarga(recarga: any): Observable<any> {
     console.log(recarga);
